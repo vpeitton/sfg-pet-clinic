@@ -96,7 +96,7 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:vpeitton/copiapetclinicspg.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:vpeitton/sfg-pet-clinic.git</developerConnection>
       <tag>HEAD</tag>
   </scm>
 
