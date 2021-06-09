@@ -97,7 +97,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:vpeitton/sfg-pet-clinic.git</developerConnection>
-      <tag>sfg-pet-clinic-0.0.6</tag>
+      <tag>HEAD</tag>
   </scm>
 
 </project>
