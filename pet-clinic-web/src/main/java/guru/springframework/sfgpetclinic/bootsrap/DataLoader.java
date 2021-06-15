@@ -4,8 +4,8 @@ import guru.springframework.sfgpetclinic.model.Owner;
 import guru.springframework.sfgpetclinic.model.Vet;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import guru.springframework.sfgpetclinic.model.services.OwnerService;
-import guru.springframework.sfgpetclinic.model.services.VetService;
+import guru.springframework.sfgpetclinic.services.OwnerService;
+import guru.springframework.sfgpetclinic.services.VetService;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -22,13 +22,11 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         Owner owner1 = new Owner();
-        owner1.setId(1L);
         owner1.setFirstName("Michael");
         owner1.setLastName("Weston");
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
-        owner2.setId(2L);
         owner2.setFirstName("Victoria");
         owner2.setLastName("Peitton");
         ownerService.save(owner2);
@@ -36,19 +34,16 @@ public class DataLoader implements CommandLineRunner {
         System.out.println("\nLoaded Owners....");
 
         Vet vet1 = new Vet();
-        vet1.setId(1L);
         vet1.setFirstName("Sam");
         vet1.setLastName("Axe");
         vetService.save(vet1);
 
         Vet vet2 = new Vet();
-        vet2.setId(2L);
         vet2.setFirstName("Fiona");
         vet2.setLastName("Glenanne");
         vetService.save(vet2);
 
         System.out.println("\nLoaded Vets....");
-
 
     }
 }
