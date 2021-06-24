@@ -6,6 +6,15 @@ public class Pet extends BaseEntity{
     private Owner owner;
     private PetType petType;
     private LocalDate birthDate;
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public Owner getOwner() {
         return owner;
