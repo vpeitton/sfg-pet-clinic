@@ -1,6 +1,5 @@
 package guru.springframework.sfgpetclinic.model;
 
-import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.MappedSuperclass;
