@@ -6,9 +6,9 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@Getter
 @Entity
 @Setter
-@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
